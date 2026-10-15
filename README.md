@@ -1,33 +1,34 @@
-# React + TypeScript + Vite
+🍸 Captain Cocktail
 
-Ce modèle fournit une configuration minimale pour faire fonctionner React dans Vite avec certaines règles Biome et package préinstallé.
+Trouve le cocktail parfait avec ce que tu as dans ton bar. Une application web pour explorer des cocktails, les filtrer et les garder en favoris.
 
-Il est préconfiguré avec un ensemble d'outils pour aider les étudiants à produire du code de qualité industrielle, tout en restant un outil pédagogique :
+🔗 Voir l'application en ligne
 
-- **Husky** : Vous permet d'exécuter des commandes spécifiques déclenchées par des événements _git_.
-- **Vite** : Alternative à _Create-React-App_, offrant une expérience plus fluide avec moins d'outils.
-- **Biome** : Alternative à _ESlint_ et _Prettier_, assurant la qualité du code selon les règles choisies.
+Le projet
 
-## Utilisateurs Windows
+Projet 2 de la formation Développeur Web et Web Mobile (Wild Code School, promo 2026), réalisé à quatre développeurs en juillet 2026. L'application utilise l'API publique TheCocktailDB.
 
-Assurez-vous de lancer ces commandes dans un terminal Git pour éviter [les problèmes de formats de nouvelles lignes](https://en.wikipedia.org/wiki/Newline#Issues_with_different_newline_formats) :
+Fonctionnalités
+Catalogue de cocktails avec recherche, tri et pagination
+Fiche détaillée de chaque cocktail (ingrédients, préparation)
+Mon bar : je renseigne mes ingrédients, l'application me suggère des cocktails
+Favoris gardés d'une visite à l'autre
+Accueil avec les cocktails tendance
+Interface responsive, en français et en anglais
+Stack technique
 
-```sh
-git config --global core.eol lf
-git config --global core.autocrlf false
-```
+React, TypeScript, Vite, Sass, React Router, Context API, API REST (TheCocktailDB), Biome, Git / GitHub, Netlify
 
-## Installation & Utilisation
+Ma contribution
+Page Cocktails : appel à l'API, cartes, grille, pagination, barre de recherche, bouton favori, responsive et traduction anglaise
+Barre de navigation (structure et style)
+Cocktails tendance : carte affichée sur l'accueil, avec ouverture de la fiche détaillée
+Équipe
 
-1. Installez le plugin **Biome** dans VSCode et configurez-le.
-2. Clonez ce dépôt, puis accédez au répertoire cloné.
-3. Exécutez la commande `npm install`.
-4. Créez un fichier d'environnement (`.env`) à la racine du dossier projet : vous pouvez copier le fichier `.env.sample` comme modèle (**ne le supprimez pas**).
+Cynthia · Frédéric · Thomas · Sophie
 
-## Commandes de Base
-
-| Commande               | Description                                                                 |
-|------------------------|-----------------------------------------------------------------------------|
-| `npm install`          | Installe les dépendances                   |
-| `npm run dev`          | Démarre le server en développement         |
-| `npm run check`        | Exécute les outils de validation (linting et formatage)                     |
+Lancer le projet en local
+bash
+npm install
+# copier .env.sample en .env et y mettre la clé de l'API TheCocktailDB (VITE_API_KEY)
+npm run dev
